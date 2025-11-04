@@ -255,6 +255,11 @@ public final class CameraViewModule: Module, ScannerResultHandler {
         view.getAvailableLenses()
       }
 
+      // New: expose supported max photo dimensions from the active photo output
+      AsyncFunction("getSupportedMaxPhotoDimensions") { view in
+        return view.getSupportedMaxPhotoDimensions()
+      }
+
       AsyncFunction("takePictureRef") { (view, options: TakePictureOptions) -> PictureRef in
         #if targetEnvironment(simulator)
         return try takePictureRefForSimulator(self.appContext, view, options)
