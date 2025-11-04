@@ -1,5 +1,12 @@
 import ExpoModulesCore
 
+struct MaxPhotoDimensions: Record {
+  @Field 
+  var width: Int
+  
+  @Field 
+  var height: Int
+}
 struct TakePictureOptions: Record {
   @Field
   var id: Int = 0
@@ -30,6 +37,9 @@ struct TakePictureOptions: Record {
 
   @Field
   var pictureRef: Bool = false
+
+   @Field
+  var maxPhotoDimensions: MaxPhotoDimensions? = nil
 }
 
 struct SavePictureOptions: Record {
