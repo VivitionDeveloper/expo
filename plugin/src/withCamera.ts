@@ -5,7 +5,7 @@ import {
   IOSConfig,
   withGradleProperties,
   withPodfileProperties,
-} from 'expo/config-plugins';
+} from '@expo/config-plugins';
 
 const pkg = require('../../package.json');
 
