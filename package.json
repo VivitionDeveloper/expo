@@ -31,7 +31,7 @@
   },
   "sideEffects": false,
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p . && tsc -p plugin",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
@@ -58,6 +58,7 @@
   },
   "devDependencies": {
     "@types/invariant": "^2.2.37",
+    "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "expo-module-scripts": "^5.0.7",
     "expo-modules-core": "^3.0.24",

@@ -21,6 +21,9 @@ importers:
       '@types/invariant':
         specifier: ^2.2.37
         version: 2.2.37
+      '@types/node':
+        specifier: ^24.10.0
+        version: 24.10.0
       '@types/react':
         specifier: ^19.2.2
         version: 19.2.2
